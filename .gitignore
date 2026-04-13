@@ -2,3 +2,4 @@ data/
 manifests/
 features/
 .cache/
+.DS_Store
