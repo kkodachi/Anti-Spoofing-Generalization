@@ -1,3 +1,4 @@
 data/
 manifests/
 features/
+.DS_Store
