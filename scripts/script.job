@@ -3,7 +3,7 @@
 #SBATCH --gres=gpu:v100:1
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=4
+#SBATCH --cpus-per-task=16
 #SBATCH --mem=16GB
 #SBATCH --time=48:00:00
 #SBATCH --account=skadiri_1836
@@ -19,4 +19,4 @@ source ~/.bashrc
 
 conda activate ee599
 
-jupyter nbconvert --to notebook --execute project_setup.ipynb --output project_setup_output.ipynb
+jupyter nbconvert --to notebook --execute feature_extraction.ipynb --output feature_extraction_output.ipynb
